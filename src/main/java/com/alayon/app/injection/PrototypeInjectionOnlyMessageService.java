@@ -1,6 +1,5 @@
 package com.alayon.app.injection;
 
-import org.springframework.stereotype.Service;
 
 public class PrototypeInjectionOnlyMessageService {
 	

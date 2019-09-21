@@ -3,7 +3,6 @@ package com.alayon.app.injection;
 import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Component;
 
@@ -45,6 +44,10 @@ public class InjectionMain{
 	    Logger.getLogger(this.getClass().getSimpleName()).info(">>>>>>> message: " + this.prototypeInjectionOnlyMessageService2.getMessage());
 		
 		applicationContext.close();
+	}
+	
+	public String getMessage() {
+		return singletonMessageService.getMessage();
 	}
 	
 }

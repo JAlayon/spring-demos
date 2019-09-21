@@ -34,6 +34,9 @@ public class SingletonMessageService {
 				.info(">>>>>>>>> SingletonMessageService::destroy()");
 	}
 	
+	public String getName() {
+		return name;
+	}
 	
 	public String getMessage() {
 		return counter++ + ": SingletonMessageService!!! miw.name = " + name;
