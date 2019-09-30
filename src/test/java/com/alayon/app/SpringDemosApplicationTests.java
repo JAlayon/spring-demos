@@ -1,16 +1,22 @@
 package com.alayon.app;
 
-import org.junit.Test;
+import com.alayon.app.injection.*;
 import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
-
-@RunWith(SpringRunner.class)
-@SpringBootTest
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+/**
+ * 
+ * @author alayon
+ * This is a Suite of classes in order to test all other tests.
+ *
+ */
+@RunWith(Suite.class)
+@SuiteClasses({
+	//InjectionMainITest.class,
+	InjectionMainUTestSpring.class,
+	SingletonMessageServiceUTest.class,
+	SingletonMessageServiceUTestSpring.class
+})
 public class SpringDemosApplicationTests {
-
-	@Test
-	public void contextLoads() {
-	}
 
 }

@@ -6,6 +6,12 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * 
+ * @author alayon
+ * This is a simple test without using spring
+ *
+ */
 public class SingletonMessageServiceUTest {
 
 	private SingletonMessageService sms;

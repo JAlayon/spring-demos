@@ -24,7 +24,7 @@ public class SpringDemosApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		if(args.length > 0) {
 			switch (args[0]) {  
-				case "injection":							//mvn clean spring-boot:run -Dspringboot.run.arguments="injection"
+				case "injection":		//mvn clean spring-boot:run -Dspring-boot.run.arguments="injection"
 					this.injectionMain.debugAndClose();
 					break;
 				default:
