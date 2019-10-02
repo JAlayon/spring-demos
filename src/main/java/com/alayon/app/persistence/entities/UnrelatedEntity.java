@@ -69,7 +69,6 @@ public class UnrelatedEntity implements Serializable{
 
 	public UnrelatedEntity(String nickname, Gender gender, Calendar bornDate, String text, String[] strings,
 			List<String> list, String noPersistent) {
-		super();
 		this.nickname = nickname;
 		this.gender = gender;
 		this.bornDate = bornDate;
