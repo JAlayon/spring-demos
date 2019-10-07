@@ -34,8 +34,6 @@ public class InjectionMain{
 	//@Qualifier("poms")
 	private PrototypeInjectionOnlyMessageService prototypeInjectionOnlyMessageService2;
 
-
-	
 	public void debugAndClose() {
 		Logger.getLogger(this.getClass().getSimpleName()).info(">>>>>>> message: " + this.singletonMessageService.getMessage());
 		Logger.getLogger(this.getClass().getSimpleName()).info(">>>>>>> message: " + this.singletonMessageService2.getMessage());
